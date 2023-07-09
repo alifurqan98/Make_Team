@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+.Navbar {
+    height: 50px;
+    background-color: azure;
+    box-shadow: 1px 3px 10px rgb(153, 153, 242);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Home {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: rgb(54, 54, 234);
+}
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.head {
+    text-align: center;
+}
+.data__single {
+    text-align: center;
+    border: 1px solid rgb(216, 214, 214);
+    width: 18rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0px 5px 5px rgba(175, 174, 174, 0.787);
+}
+.data__single img {
+    width: 120px;
+    height: 100px;
+}
+
+.data__single h4 {
+    margin: 0.5rem 0rem 1.5rem 0rem;
+}
+.data__single button {
+    width: 80%;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.data__single button:hover {
+    opacity: 0.8;
+}
+
+.data__single p {
+    margin: 5px 0px;
+}
+.pagination {
+    padding: 10px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.pagination span {
+    padding: 15px 25px;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.pagination__selected {
+    background-color: rgb(220, 220, 220);
+}
+.page__disabled {
+    opacity: 0;
+}
+
+.form {
+    width: 40%;
+    margin: auto;
+}
+
+.search_input {
+    outline: gainsboro;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px 1.2rem;
+    border-radius: 5px;
+    border: 2px solid rgb(213, 212, 212);
+}
+
+.my_team {
+    border: 1px solid black;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: rgb(54, 54, 234);
+}
+.my_team:hover {
+    opacity: 0.8;
+}
+.name {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgb(54, 54, 234);
+}
+
+@media screen and (max-width: 600px) {
+    .pagination {
+        padding: 5px;
+        margin: 13px 0;
+    }
+    .pagination span {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search_input {
+        font-size: 0.9rem;
+        padding: 5px 1rem;
+    }
+    .pagination {
+        padding: 5px;
+        margin: 13px 0;
+    }
+    .pagination span {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .Navbar {
+        height: 30px;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+    .Home {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .my_team {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-bottom: 3px;
+        justify-content: flex-end;
+        margin-left: -10px;
+    }
+    .name {
+        width: 150px;
+        height: 100%;
+        font-size: 1.3rem;
+    }
+
+    .search_input {
+        font-size: 0.9rem;
+        padding: 5px 1rem;
+    }
+    .pagination {
+        padding: 3px;
+        margin: 8px 0;
+    }
+    .pagination span {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .search_input {
+        font-size: 0.75rem;
+        padding: 5px 1rem;
+    }
+
+    .data__single {
+        width: 15rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+}
